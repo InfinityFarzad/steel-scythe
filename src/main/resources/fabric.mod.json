@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "steel_scythe",
+	"version": "1.0.0",
+	"name": "Steel Scythe",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"farzad!(Owner,texture artist and coder)",
+		"supertoady!(Help With Mixins And Scythe Code)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/steel_scythe/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.farzad.steel_scythe.SteelScythe"
+		],
+		"fabric-datagen": [
+			"net.farzad.steel_scythe.SteelScythe"
+		]
+	},
+	"mixins": [
+		"steel_scythe.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " WW",
+    " RW ",
+    "R W"
+  ],
+  "key": {
+    "W": {
+      "item": "steel_scythe:steel_ingot"
+    },
+    "R": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tutorial:custom_item",
+    "count": 1
+  }
+}
+
