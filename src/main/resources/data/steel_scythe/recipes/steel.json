@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_scrap"
+  },
+  "result": {
+    "item": "steel_scythe:steel_ingot"
+  }
+}

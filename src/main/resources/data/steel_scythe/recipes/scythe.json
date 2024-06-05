@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " WW",
-    " RW ",
+    " RW",
     "R W"
   ],
   "key": {
@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "tutorial:custom_item",
+    "item": "steel_scythe:scythe",
     "count": 1
   }
 }
