@@ -3,13 +3,20 @@ package net.farzad.steel_scythe.item.custom;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
+
 import net.minecraft.entity.EquipmentSlot;
+
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
+
 import net.minecraft.item.Item;
+
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+
+
+
 
 public class ScytheItem extends SwordItem {
     private final float attackDamage;
@@ -31,5 +38,7 @@ public class ScytheItem extends SwordItem {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
         return slot == EquipmentSlot.MAINHAND ? this.attributeModifiers : super.getAttributeModifiers(slot);
-    }
-}
+
+
+    }}
+
