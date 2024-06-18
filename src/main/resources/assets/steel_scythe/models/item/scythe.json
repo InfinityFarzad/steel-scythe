@@ -2,5 +2,11 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "steel_scythe:item/scythe"
+  },    "display": {
+  "head": {
+    "rotation": [ 0, 0, 270 ],
+    "translation": [ 0, 3.5, 0.05],
+    "scale":[ 1.5, 1.5, 1.5 ]
   }
+}
 }

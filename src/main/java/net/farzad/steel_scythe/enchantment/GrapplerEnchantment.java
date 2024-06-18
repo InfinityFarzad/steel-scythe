@@ -31,6 +31,8 @@ public class GrapplerEnchantment extends Enchantment {
             ((LivingEntity) target).takeKnockback(0.4,target.getX() - user.getX(), target.getZ() - user.getZ());
 
         }
+
+        target.velocityModified=true;
         super.onTargetDamaged(user, target, level);
     }
   

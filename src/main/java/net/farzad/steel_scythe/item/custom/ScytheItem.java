@@ -4,18 +4,22 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 
+import net.farzad.steel_scythe.sound.ModSounds;
 import net.minecraft.entity.EquipmentSlot;
 
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 
 import net.minecraft.item.Item;
 
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
-
-
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.world.WorldEvents;
 
 
 public class ScytheItem extends SwordItem {
@@ -40,5 +44,13 @@ public class ScytheItem extends SwordItem {
         return slot == EquipmentSlot.MAINHAND ? this.attributeModifiers : super.getAttributeModifiers(slot);
 
 
-    }}
+    }
+
+
+
+
+
+
+}
+
 

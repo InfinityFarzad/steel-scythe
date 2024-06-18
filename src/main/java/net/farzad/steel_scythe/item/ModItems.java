@@ -14,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
     public static final Item SCYTHE = RegisterItem("scythe",
-            new ScytheItem(ModToolMaterial.STEEL_INGOT,-3,5,2.4,new FabricItemSettings().group(ItemGroup.COMBAT)));
+            new ScytheItem(ModToolMaterial.STEEL_INGOT,-3,8,2.4,new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final Item[] bigItems = {SCYTHE};
     //bigitems is just a list name and is used to change the items model in inventory
     // but doss not change its size handheld that is done in its json file.

@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 
 public enum ModToolMaterial implements ToolMaterial {
-    STEEL_INGOT(5, 650, 4.5f, 3.5f, 26,
+    STEEL_INGOT(5, 650, 4.5f, 9.8f, 26,
             () -> Ingredient.ofItems(ModItems.STEEL_INGOT));
 
     public static float getAttackDamage;
