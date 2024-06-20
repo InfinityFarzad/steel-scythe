@@ -8,6 +8,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModEnchantments {
     public static Enchantment GRAPPLER = register("grappler", new GrapplerEnchantment());
+    public static Enchantment DARKSTRIKE = register("darkstrike", new DarkStrikeEnchantment());
 
 
     private static Enchantment register(String name, Enchantment enchantment) {

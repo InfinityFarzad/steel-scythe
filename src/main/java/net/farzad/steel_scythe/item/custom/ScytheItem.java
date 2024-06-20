@@ -45,6 +45,13 @@ public class ScytheItem extends SwordItem {
 
 
     }
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        stack.damage(1, attacker, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+        attacker.getWorld().playSound(null,attacker.getBlockPos(),ModSounds.SCYTHE_SHARPEN, SoundCategory.PLAYERS,4,4);
+        return true;
+    }
+
 
 
 

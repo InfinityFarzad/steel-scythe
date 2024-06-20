@@ -4,6 +4,8 @@ import net.fabricmc.api.ModInitializer;
 
 import net.farzad.steel_scythe.enchantment.ModEnchantments;
 import net.farzad.steel_scythe.item.ModItems;
+import net.farzad.steel_scythe.sound.ModSounds;
+import net.farzad.steel_scythe.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +21,8 @@ public class SteelScythe implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModEnchantments.registerModEnchantments();
+		ModSounds.registerModSounds();
+		ModLootTableModifiers.modifyLootTables();
 
 
 		LOGGER.info("Hello Fabric world!");

@@ -2,10 +2,12 @@ package net.farzad.steel_scythe.enchantment;
 
 
 
+import net.fabricmc.fabric.mixin.loot.LootTableAccessor;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.*;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.loot.LootTable;
 import net.minecraft.util.math.Vec3d;
 
 
@@ -34,6 +36,7 @@ public class GrapplerEnchantment extends Enchantment {
 
         target.velocityModified=true;
         super.onTargetDamaged(user, target, level);
+
     }
   
 }

@@ -1,12 +1,14 @@
 {
 	"schemaVersion": 1,
 	"id": "steel_scythe",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"name": "Steel Scythe",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"farzad!(Owner,texture artist and coder)",
-		"supertoady!(Help With Mixins And Scythe Code)"
+		"farzad!(Owner,coder)",
+		"supertoady!(Help With Mixins And Scythe Code)",
+		"Sofithetransgal!(texture artist of the mod)"
+
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

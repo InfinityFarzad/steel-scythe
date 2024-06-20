@@ -15,9 +15,14 @@ public class ModSounds {
     public static SoundEvent SCYTHE_SHARPEN = registerSoundEvent("scythe_sharpen");
 
 
-
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = new Identifier(SteelScythe.MOD_ID, name);
         return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
     }
+    public static void registerModSounds() {
+
+        SteelScythe.LOGGER.debug("Registering Sounds for " + SteelScythe.MOD_ID);
+    }
+
+
 }

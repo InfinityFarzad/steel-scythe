@@ -3,6 +3,7 @@ package net.farzad.steel_scythe.util;
 
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.farzad.steel_scythe.enchantment.ModEnchantments;
 import net.farzad.steel_scythe.item.ModItems;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -22,12 +23,14 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.9f)) // Drops 100% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.67f)) // Drops 67% of the time
                         .with(ItemEntry.builder(ModItems.STEEL_INGOT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }
+
+
 
 
         });
