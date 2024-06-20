@@ -24,7 +24,7 @@ public abstract class ItemRendererMixin {
 
         for (Item item : ModItems.bigItems){
 
-            if (stack.isOf(item) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND) {
+            if (stack.isOf(item) && renderMode != ModelTransformation.Mode.GUI && renderMode != ModelTransformation.Mode.GROUND)  {
 
                 return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(SteelScythe.MOD_ID, "scythe_big", "inventory"));
             }

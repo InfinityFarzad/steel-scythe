@@ -2,7 +2,9 @@
   "item.steel_scythe.scythe": "Scythe",
   "item.steel_scythe.steel_ingot": "Steel Ingot",
   "enchantment.steel_scythe.grappler": "Grapple Swing",
-  "enchantment.steel_scythe.darkstrike": "Dark Strike"
+  "enchantment.steel_scythe.darkstrike": "Dark Strike",
+  "enchantment.steel_scythe.dakrstrike.desc":"Takes Health From you and Gives Darkness to the target",
+  "enchantment.steel_scythe.grappler.desc":"Pulls Back Players towards You when attacked"
 
 
 
