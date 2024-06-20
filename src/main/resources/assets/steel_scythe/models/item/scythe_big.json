@@ -23,7 +23,7 @@
     },
     "thirdperson_lefthand": {
       "rotation": [
-        0,
+        0.0,
         90,
         -35
       ],
