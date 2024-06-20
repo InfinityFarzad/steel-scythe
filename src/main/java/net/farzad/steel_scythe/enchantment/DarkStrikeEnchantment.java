@@ -39,7 +39,9 @@ public class DarkStrikeEnchantment extends Enchantment {
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity) {
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 7));
-            ((LivingEntity) user).damage(DamageSource.mob(user),10);
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 200,7));
+            ((LivingEntity) user).damage(DamageSource.mob(user),5);
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100,2));
         }
 
         super.onTargetDamaged(user, target, level);

@@ -5,6 +5,7 @@ import net.farzad.steel_scythe.SteelScythe;
 import net.farzad.steel_scythe.item.custom.ModToolMaterial;
 
 import net.farzad.steel_scythe.item.custom.ScytheItem;
+import net.minecraft.client.particle.Particle;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
@@ -22,7 +23,9 @@ public class ModItems {
 
     private static Item RegisterItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(SteelScythe.MOD_ID, name), item);
+
     }
+
 
 
 
